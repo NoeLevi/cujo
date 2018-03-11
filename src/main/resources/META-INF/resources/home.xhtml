@@ -1,0 +1,595 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:sec="http://www.springframework.org/security/facelets/tags">
+
+<h:head>
+	<title><ui:insert name="titulo">Venda</ui:insert></title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	
+	<h:outputScript name="jquery.js" library="primefaces/jquery"
+		id="jsJquery" />
+	
+	<h:outputScript name="jquery-plugins.js" library="primefaces/jquery"
+		id="jsJqueryPlugin" />
+	
+	<h:outputScript name="jquery.cookie.js" library="js"
+		id="jsJaqueryCookie" />
+
+	
+	<h:outputScript name="nicescroll.js" library="js" id="jsCroll"/>
+
+	<h:outputStylesheet name="animate.css" library="css" id="anim"/>
+
+	<h:outputScript name="popper.min.js" library="js" id="jsProCookie"/>
+
+	<h:outputStylesheet name="primefaces.css" library="primefaces" id="jdPrimeCss"/>
+
+	<h:outputStylesheet name="bootstrap-grid.min.css" library="css"/>
+
+	<h:outputStylesheet name="bootstrap.min.css" library="css"/>
+
+	
+
+	<h:outputScript name="bootstrap.bundle.js" library="js"/>
+	<h:outputScript name="bootstrap.bundle.min.js" library="js"/>
+
+	<h:outputStylesheet name="jquery-ui.css" library="primefaces/jquery/ui"
+		id="jsJqueryUi"/>
+
+	<h:outputScript name="primefaces.js" library="primefaces" id="jsPrime" />
+	
+
+
+	
+	<h:outputScript name="bootstrap.js" library="js"/>
+
+<h:outputStylesheet name="style.css" library="engine1"/>
+	
+	<h:outputStylesheet name="style.mod.css" library="engine1"/>
+	
+	<h:outputScript name="scripty.js" library="js" id="jsScriptSistema" />
+	<h:outputScript name="jsf.js" library="javax.faces" />
+	
+	
+	
+	
+	<h:outputScript name="script.js" library="engine1"/>
+	
+	
+	
+	<h:outputStylesheet name="estilo.css" library="css" id="cssStiloSistema"/>
+		<h:outputScript name="jquery.js" library="engine1"/>
+<h:outputStylesheet name="style.css"/>
+<h:outputStylesheet name="style.mod.css"/>	
+	<h:outputScript name="wowslider.js" library="engine1"/>
+	<h:outputScript name="wowslider.mod.js" library="engine1"/>
+		
+	<script src="http://maps.google.com/maps/api/js?sensor=true|false"
+type="text/javascript"></script>
+
+</h:head>
+
+<h:body>
+	<script type="text/javascript" charset="UTF-8">
+		$.noConflict();
+	</script>
+	<div class="container-fluid  d-none d-lg-block" id="logo"
+		style="background-color: white !important; border-bottom: 4px solid back; height: 40px; padding-top: 10px !important;">
+		<div class="row">
+			<div class="col-3 col-md-3">
+				<span
+					style="width: 100% !important; text-align: center !important; color: #CDAA7D; font-size =25%; font-weight: 900 !important;">CUJO-
+					Sociedade Mineira, Lda</span>
+			</div>
+			<div class="col-3 col-md-3">
+				<h:graphicImage library="img" name="tablet-3x.png" />
+				+ 258 84 2266 042
+			</div>
+			<div class="col-3 col-md-3">
+				<h:graphicImage library="img" name="mail.png" height="30px" />
+				direccao@cujo.co.mz ou info@cujo.co.mz
+			</div>
+			<div class="col-3 col-md-3"
+				style="text-align: right; padding-right: 0px !important;">
+				<h:graphicImage id="fotoMoca" library="img" name="mocambique.gif"
+					styleClass="img img-fluid apontar"
+					style="height:20px; width:30px; margin-right:20px;"></h:graphicImage>
+				<h:graphicImage id="fotoIngl" library="img" name="en.gif"
+					styleClass="img img-fluid apontar"
+					style=" height:20px; width:30px; margin-right:10px;"></h:graphicImage>
+				<h:commandButton value="Entrar" styleClass="btn btn-success"
+					style="width:80px; background-color:#EA3E0A; align-items:left;" />
+
+			</div>
+		</div>
+
+
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+		style="background-color: #EA3E0A !important; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: #000; height: 80px; padding-top: 10px !important;">
+		<div class="col-6 col-md-3">
+			<a class="navbar-brand" href="#"><h:graphicImage library="img"
+					name="Logo Cujo-01.png" height="70" width="155" /></a>
+		</div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="col-6 col-md-9">
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a id="home" class="nav-link"
+						href="pedreira.jsf">Home <span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false"> Quem Somos </a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Visão</a> <a
+								class="dropdown-item" href="#">Valores</a>
+								 <a
+								class="dropdown-item" href="#">Missão</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Pilares da instituição</a>
+						</div></li>
+					<li class="nav-item"><a class="nav-link" href="servicos.jsf">Serviços</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Documetação </a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="legislacao.jsf">Legislação</a> 
+						</div></li>
+					<li class="nav-item"><a class="nav-link" href="galeria.jsf">Galeria</a></li>
+
+					<li class="nav-item"><a class="nav-link" href="contacto.jsf">Fale-conosco</a></li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search"
+						placeholder="Procurar" aria-label="Search" size="30" />
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+		<li><img src="/projectovenda/javax.faces.resource/pedreira_01.jpg.jsf?ln=img/data1/images" alt="Pedreira" title="Pedreira" id="wows1_0"/></li>
+		<li><img src="/projectovenda/javax.faces.resource/pedreira_04.jpg.jsf?ln=img/data1/images" alt="Basalto E Riolite" title="Basalto E Riolite" id="wows1_1"/></li>
+		<li><a href="http://wowslider.net"><img src="/projectovenda/javax.faces.resource/dsc_0052.jpg.jsf?ln=img/data1/images" alt="slider jquery" title="Espaço de exploração" id="wows1_2"/></a></li>
+		<li><img src="/projectovenda/javax.faces.resource/dsc_0078.jpg.jsf?ln=img/data1/images" alt="Minerais" title="Minerais" id="wows1_3"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Pedreira"><span><img src="/projectovenda/javax.faces.resource/pedreira_01.jpg.jsf?ln=img/data1/tooltips" alt="Pedreira"/>1</span></a>
+		<a href="#" title="Basalto E Riolite"><span><img src="/projectovenda/javax.faces.resource/pedreira_04.jpg.jsf?ln=img/data1/tooltips" alt="Basalto E Riolite"/>2</span></a>
+		<a href="#" title="Espaço de exploração"><span><img src=" /projectovenda/javax.faces.resource/dsc_0052.jpg.jsf?ln=img/data1/tooltips" alt="Espaço de exploração"/>3</span></a>
+		<a href="#" title="Minerais"><span><img src="/projectovenda/javax.faces.resource/dsc_0078.jpg.jsf?ln=img/data1/tooltips" alt="Minerais"/>4</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">html slider</a> by WOWSlider.com v8.8</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<div class="btn-group" style="position: fixed; z-index: 2000">
+
+		<button id="noticia"
+			style="width: 100px; position: absolute !important; left: 10px; top: -710px; background-color: #EA3E0A; height: 35px;"
+			type="button" class="btn btn-secondary" data-toggle="tooltip"
+			data-placement="right" title="Click para saber">Sabias que
+			...</button>
+
+	</div>
+	<div class=""
+		style="background: white; margin-left: 175px; margin-right: 175px; padding-bottom: 20px">
+		<h1 align="center" class="" style="color: #CDAA7D;">
+			<span class="display-4"
+				style="font-weight: 900; border-bottom: 3px solid #EA3E0A;"
+				id="empresa">CUJO</span>
+		</h1>
+
+		<p class="lead text-center eventoCaregar"
+			style="z-index: 2000; font-size: 15px;">
+			<strong style="font-weight: 600; font-size: 15px; color: #EA3E0A;"
+				class="display-s4" id="apresentacao">A CUJO, Sociedade
+				Mineira, Lda</strong><span id="intro" style="font-size:14px;"> é uma entidade vocaciondada na
+				exploração de pedra para fins de construção de infra-estruturas
+				publicas e de habilitação.</span><br></br> A CUJO foi <small id="reticecia">...</small>
+			<small class="lead text-center" id="esconder"
+				style="font-size: 15px;">criada com o objectivo de
+				fortalecer o mercado de exploração mineira, cada vez mais exigente
+				e, ainda, estimular o desenvolvimento comunitario e urbano,
+				proporcionando receitas aos pais e criacao de postos de trabalho.
+				Dispomos de uma area de exploração de 107 Ha, a 10 km da vila do
+				distrito de Namaacha, Provincia de Maputo, rica em riolitos e
+				Basaltos, minerais com potencialidades aplicaveis na construção de
+				estradas, caminhos-de-ferro, pontes, edificios e outras obras de
+				construção civil.</small> <a href="cujo.jsf" id="BotaoAmostrar"
+				 class="btn btn-primary"
+				style="background-color: #EA3E0A;">LEIA MAIS...</a>
+
+
+		</p>
+	</div>
+	<div class="jumbotron jumbotron-fluid" style="margin-bottom: 0px;">
+		<div class="container">
+			<h1 class="display-4" style="color: #EA3E0A; font-weight: 800;">
+				<h:graphicImage library="img" name="star-3x.png" height="40px"
+					style=""></h:graphicImage>
+				<h:graphicImage library="img" name="Logo Cujo-01.png" height="485"
+					width="1000"
+					style="position: absolute;  left:200px; opacity: 0.5;  filter: alpha(opacity=50);"></h:graphicImage>
+				Pilares de Intervenção Institucional
+			</h1>
+			<p class="lead">
+			<ul class="list-group" style="list-style: none;">
+				<li class="animated infinite bounce"><h3>Proteção Ambiental;</h3></li>
+				<li class="animated infinite shake" style="margin-left: 40px; margin-top: 15px;"><h3>Saúde
+						e Segurança no Trabalho;</h3></li>
+				<li class="animated infinite bounce" style="margin-left: 90px; margin-top: 15px;"><h3>Desenvolvimento
+						Comunitário.</h3></li>
+			</ul>
+			</p>
+		</div>
+	</div>
+	<div class=""
+		style="background: white; margin-left: 175px; margin-right: 175px; padding: 20px">
+		<div class="row">
+
+			<div class="col-sm-4">
+				<div class="card"
+					style="border: none !important; background: transparent;">
+					<div class="card-block">
+						<h1 class="card-title">Missão</h1>
+						<p class="card-text" style="font-size: 16px;">Promover o
+							desenvolvimento comunitário e urbano, atraves da exploração
+							sustentável da pedra de construção civil</p>
+						<a href="#" class="btn btn-primary"
+							style="background-color: #EA3E0A;">LEIA MAIS ...</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card"
+					style="border: none !important; background: transparent;">
+					<div class="card-block">
+						<h1 class="card-title">Visão</h1>
+						<p class="card-text" style="font-size: 16px;">Ser referencia
+							na exploração sustentavel da pedra de construção civil, a nivel
+							nacional regional, e</p>
+						<a href="#" class="btn btn-primary"
+							style="background-color: #EA3E0A;">LEIA MAIS ...</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="card"
+					style="border: none !important; background: transparent;">
+					<div class="card-block">
+						<h1 class="card-title">Valores</h1>
+						<p class="card-text">
+						<ul>
+							<li style="font-size: 16px;">Profissionalismo</li>
+							<li style="font-size: 16px; padding-bottom: 20px;">Segurança;</li>
+						</ul>
+						</p>
+						<a href="#" class="btn btn-primary"
+							style="background-color: #EA3E0A;">LEIA MAIS ...</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div
+		style="background-color: white; padding-top: 30px; padding-bottom: 30px; margin-left: 175px; margin-right: 175px;">
+		<div class="row">
+			<div class="col-12 col-md-8">
+				<div align="center" class=""
+					style="color: #CDAA7D; font-size =20%; width: 100%; padding: 10px;">
+					<span class="display-4"
+						style="font-weight: 900; border-bottom: 3px solid #EA3E0A;">Produtos
+					</span>
+				</div>
+				<div class="card-group">
+					<div class="card fotoOrg">
+						<h:graphicImage library="img" name="basalto.jpg"
+							styleClass="card-img-top" height="150px;"></h:graphicImage>
+						<div class="card-body">
+							<h4 class="card-title">
+								<b>Basalto Natural</b>
+							</h4>
+						<h:commandButton value=" Ver Descrição" style=" padding:10px; background-color:transparent; border:1px solid black;"/>
+
+
+						</div>
+					</div>
+					<div class="card fotoOrg" style="margin-left: 20px !important;">
+						<h:graphicImage library="img" name="basalto1.jpg"
+							styleClass="card-img-top" height="150px;"></h:graphicImage>
+						<div class="card-body">
+							<h4 class="card-title">
+								<b>Basalto Irregular</b>
+							</h4>
+							<h:commandButton onclick="redirecionarPaginaAqui('#{request.contextPath}','/publico/descricaoBasalto.jsf');" value=" Ver Descrição" style=" padding:10px; background-color:transparent; border:1px solid black;"/>
+
+						</div>
+					</div>
+					<div class="card fotoOrg" style="margin-left: 20px !important;">
+						<h:graphicImage library="img" name="reol.jpg"
+							styleClass="card-img-top" height="150px;"
+							style="border: 1px solid #ccc;'"></h:graphicImage>
+						<div class="card-body">
+							<h4 class="card-title">
+								<b>Riolite </b>
+							</h4>
+					<h:commandButton value=" Ver Descrição" style=" padding:10px; background-color:transparent; border:1px solid black;"/>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<div align="center" style="color: #CDAA7D; width: 100%;">
+					<span class="display-4"
+						style="font-weight: 900; border-bottom: 3px solid #EA3E0A;">Galeria</span>
+				</div>
+				<div class="row" style="margin-top: 20px;">
+
+
+					<p:lightBox>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0080.JPG.jsf?ln=img/exploracao"
+							title="Mail">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0080.JPG" />
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0076.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0076.JPG" />
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0077.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0077.JPG" />
+
+
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0105.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0105.JPG" />
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0142.JPG.jsf?ln=img/exploracao"
+							title="Mail">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0142.JPG" />
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0057.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0057.JPG" />
+						</h:outputLink>
+						<!--  		<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0052.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0052.JPG" />
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0127.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0127.JPG" />
+						</h:outputLink>
+			-->
+					</p:lightBox>
+				</div>
+				<div align="center" style="color: #CDAA7D; width: 100%;">
+					<h2
+						style="font-weight: 900; border-bottom: 3px solid #EA3E0A; text-align: left;">Siga
+						nos:</h2>
+				</div>
+				<h:graphicImage library="img" name="index.png" width="40"
+					height="25"></h:graphicImage>
+				<h:graphicImage library="img" name="twiter.jpg" width="40"
+					height="20"></h:graphicImage>
+				<a href="#" class="fa fa-facebook"></a> <a href="#"
+					class="fa fa-twitter"></a>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class=""
+		style="display: block; margin-left: 190px; margin-right: 190px;">
+		<div class="row" style="background-color: #EED5B7;">
+			<div class="col-4 col-sm-4 col-md-4" style="">
+				<h1 class="" align="center" style="color: white; font-weight: 900">Contacte-nos</h1>
+				<p:spacer height="10px;" width="100%" />
+
+				<h:graphicImage library="img" name="tablet-3x.png"
+					style=" margin-left:10px; width:20px; height:20px;" />
+				<label style="margin-left: 20px;"> (258) 84 225 5042 </label>
+				<p:spacer height="2px;" width="100%" />
+
+				<h:graphicImage library="img" name="endereco.png"
+					style=" margin-left:10px; width:20px; height:20px;" />
+				<label style="margin-left: 20px;"> Av. 3 de Fevereiro 1573 1
+					Andar Matola C700 </label>
+				<p:spacer height="2px;" width="100%" />
+
+				<h:graphicImage library="img" name="mail.png"
+					style=" margin-left:10px; width:25px; height:25px;" />
+				<label style="margin-left: 20px;"> direccao@cujo.co.mz ou
+					info@cujo.co.mz </label>
+
+
+				<form action="">
+					<div class="form-group">
+						<label for="formGroupExampleInput"><b>Nome ou Entidade</b></label>
+						<input type="text" class="form-control" id="formGroupExampleInput"
+							placeholder="Nome"></input>
+					</div>
+					<div class="form-group">
+						<label for="formGroupExampleInput2"><b>Email</b></label> <input
+							type="email" class="form-control" id="formGroupExampleInput2"
+							placeholder="Email"></input>
+					</div>
+					<div class="form-group">
+						<label for="formAssuntoInput2"><b>Assunto</b></label>
+						<textarea type="text" class="form-control" id="formAssuntoInput2"
+							placeholder="Assunto" />
+					</div>
+					<button type="submit" class="btn btn-primary"
+						style="background-color: #EA3E0A; width: 100px;">Enviar</button>
+
+				</form>
+
+			</div>
+
+			<div class="col-8 col-sm-8 col-md-8"
+				style="background-color: white; padding: 5px;">
+				
+				<p:gmap center=" -25.9667, 32.5833" zoom="15" type="hybrid"
+style="width:100%;height:100%;" model="#{mapBean.model}" />
+			</div>
+		</div>
+		<div class="row" style="background-color: #CDAA7D; height: 30px;">
+			<div class="col-12 col-md-12">
+				<h4 align="center" style="padding-top: 5px;">Copyright © CUJO
+					Sistemas 2018. Todos os Direitos Reservados.</h4>
+			</div>
+		</div>
+	</div>
+	<div id="setaCima"
+		onclick="redirecionarPaginaAqui('#{request.contextPath}','/publico/pedreira.jsf#logo');"
+		class="rounded-circle "
+		style="position: fixed; right: 20px; top: 580px; background: #CDAA7D; width: 50px !important; height: 50px !important;">
+		<h:graphicImage library="img" name="arrow-thick-top-4x.png"
+			styleClass="img img-fluid" style="padding:12px;"></h:graphicImage>
+		
+	</div>
+	
+	<script type="text/javascript">
+		$("#setaCima").hide();
+
+		$("#esconder").hide();
+
+		function amostrar() {
+			$("#esconder").show('slow');
+
+			$("#reticecia").hide();
+			$("#BotaoAmostrar").hide('slow');
+
+		}
+		$("#fotoIngl")
+				.click(
+						function() {
+
+							document.getElementById("apresentacao").innerHTML = "A CUJO, Mineral Society, Lda";
+							document.getElementById("intro").innerHTML = " is an entity that deal with exploration of stones to construction of public infra-instructer end habilitaction.";
+
+						});
+
+		$("#fotoMoca")
+				.click(
+						function() {
+
+							document.getElementById("apresentacao").innerHTML = "A CUJO, Sociedade Mineira, Lda";
+
+							document.getElementById("intro").innerHTML = " é uma 			entidade vocaciondada na exploração de pedra para fins de construção de infra-estruturas publicas e de habilitação.";
+
+						});
+
+		$("document")
+				.ready(
+						function() {
+							$("html").niceScroll();
+
+							$(".eventoCaregar").hide();
+							
+							$("#empresa").slideUp(2000)
+							$("#empresa").slideDown(2000);
+
+							$(".eventoCaregar").show(4000);
+
+							$(window).scroll(function() {
+								if ($(this).scrollTop() > 200) {
+									$("#setaCima").show('slow');
+
+									$("#BotaoAmostrar").show('show');
+									$("#esconder").hide('slow');
+									$("#reticecia").show('slow');
+
+								} else {
+									$("#setaCima").hide('slow');
+								}
+
+								if ($(window).scrollTop() > 150) {
+
+									$("p li").addClass("animated bounce");
+
+								}
+							});
+							$("#fotoMoca")
+									.hover(
+											function() {
+
+												$("#fotoMoca")
+														.attr('src',
+																'/projectovenda/javax.faces.resource/moz.png.jsf?ln=img');
+											});
+							$("#fotoMoca")
+									.mouseleave(
+											function() {
+
+												$("#fotoMoca")
+														.attr('src',
+																'/projectovenda/javax.faces.resource/mocambique.gif.jsf?ln=img');
+											});
+
+							$("#fotoIngl")
+									.hover(
+											function() {
+
+												$("#fotoIngl")
+														.attr('src',
+																'/projectovenda/javax.faces.resource/ingla.jpg.jsf?ln=img');
+											});
+
+							$("#fotoIngl")
+									.mouseleave(
+											function() {
+
+												$("#fotoIngl")
+														.attr('src',
+																'/projectovenda/javax.faces.resource/en.gif.jsf?ln=img');
+											});
+							$('#noticia').tooltip('enable');
+
+						});
+	</script>
+</h:body>
+</html>
