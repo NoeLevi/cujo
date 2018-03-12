@@ -7,7 +7,7 @@
 	xmlns:sec="http://www.springframework.org/security/facelets/tags">
 
 <h:head>
-	<title><ui:insert name="titulo">Venda</ui:insert></title>
+	<title><ui:insert name="titulo">Cujo</ui:insert></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	
 	<meta name="viewport"
@@ -21,10 +21,11 @@
 
 	<h:outputScript name="jsf.js" library="javax.faces" />
 			
-	<link rel="stylesheet" href="css/estilo.css" type="text/css"/>
 	<link rel="stylesheet" href="css/animate.css" type="text/css"/>
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
 	<link rel="stylesheet" href="engine1/style.css" type="text/css"/>
+		<link rel="stylesheet" href="engine1/style.mod.css" type="text/css"/>
+	<link rel="stylesheet" href="css/estilo.css" type="text/css"/>
 	
 	<script type="text/javascript" src="engine1/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
@@ -54,7 +55,7 @@ type="text/javascript"></script>
 			</div>
 			<div class="col-3 col-md-3">
 				<img src="img/tablet-3x.png" />
-				+ 258 84 2266 042
+				+ 258 84 2266 442
 			</div>
 			<div class="col-3 col-md-3">
 				<img src="img/mail.png" height="30px" />
@@ -394,7 +395,7 @@ type="text/javascript"></script>
 
 				<img src="img/tablet-3x.png"
 					style=" margin-left:10px; width:20px; height:20px;" />
-				<label style="margin-left: 20px;"> (258) 84 225 5042 </label>
+				<label style="margin-left: 20px;"> (258) 84 22 6442 </label>
 				<p:spacer height="2px;" width="100%" />
 
 				<img src="img/endereco.png"
@@ -436,7 +437,7 @@ type="text/javascript"></script>
 				style="background-color: white; padding: 5px;">
 				
 				<p:gmap center=" -25.9667, 32.5833" zoom="15" type="hybrid"
-style="width:100%;height:100%;" model="#{mapBean.model}" />
+style="width:100%;height:100%;"  navigationControl="true" scrollWheel="true" mapTypeControl="true" disabledDoubleClickZoom="true"/>
 			</div>
 		</div>
 		<div class="row" style="background-color: #CDAA7D; height: 30px;">
