@@ -147,7 +147,7 @@ height: 500px !important;
 }
 
 body{
-	background-image: url('/projectovenda/javax.faces.resource/wood1.jpg.jsf?ln=img');
+	background-image: url('img/wood1.jpg');
 	background-attachment: fixed;
 	
 }
