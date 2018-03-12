@@ -1,0 +1,389 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:sec="http://www.springframework.org/security/facelets/tags">
+
+<h:head>
+	<title><ui:insert name="titulo">Venda</ui:insert></title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	
+	<h:outputScript name="jquery.js" library="primefaces/jquery"
+		id="jsJquery" />
+	<script src="http://maps.google.com/maps/api/js?sensor=true|false"
+type="text/javascript"></script>
+	<h:outputScript name="jquery-plugins.js" library="primefaces/jquery"
+		id="jsJqueryPlugin" />
+	
+	<h:outputScript name="jquery.cookie.js" library="js"
+		id="jsJaqueryCookie" />
+
+	
+	<h:outputScript name="nicescroll.js" library="js" id="jsCroll"/>
+
+	<h:outputStylesheet name="animate.css" library="css" id="anim"/>
+
+	<h:outputScript name="popper.min.js" library="js" id="jsProCookie"/>
+
+	<h:outputStylesheet name="primefaces.css" library="primefaces" id="jdPrimeCss"/>
+
+	<h:outputStylesheet name="bootstrap-grid.min.css" library="css"/>
+
+	<h:outputStylesheet name="bootstrap.min.css" library="css"/>
+
+	
+
+	<h:outputScript name="bootstrap.bundle.js" library="js"/>
+	<h:outputScript name="bootstrap.bundle.min.js" library="js"/>
+
+	<h:outputStylesheet name="jquery-ui.css" library="primefaces/jquery/ui"
+		id="jsJqueryUi"/>
+
+	<h:outputScript name="primefaces.js" library="primefaces" id="jsPrime" />
+	
+	
+	
+	<h:outputScript name="bootstrap.js" library="js"/>
+
+<h:outputStylesheet name="style.css" library="engine1"/>
+	
+	<h:outputStylesheet name="style.mod.css" library="engine1"/>
+	
+	<h:outputScript name="scripty.js" library="js" id="jsScriptSistema" />
+	<h:outputScript name="jsf.js" library="javax.faces" />
+	
+	
+	
+	
+	<h:outputScript name="script.js" library="engine1"/>
+	
+	
+	
+	<h:outputStylesheet name="estilo.css" library="css" id="cssStiloSistema"/>
+		<h:outputScript name="jquery.js" library="engine1"/>
+	
+	<h:outputScript name="wowslider.js" library="engine1"/>
+	<h:outputScript name="wowslider.mod.js" library="engine1"/>
+		
+	
+
+</h:head>
+
+<h:body>
+	<script type="text/javascript" charset="UTF-8">
+		$.noConflict();
+	</script>
+	<div class="container-fluid  d-none d-lg-block" id="logo"
+		style="background-color: white !important; border-bottom: 4px solid back; height: 40px; padding-top: 10px !important;">
+		<div class="row">
+			<div class="col-3 col-md-3">
+				<span
+					style="width: 100% !important; text-align: center !important; color: #CDAA7D; font-size =25%; font-weight: 900 !important;">CUJO-
+					Sociedade Mineira, Lda</span>
+			</div>
+			<div class="col-3 col-md-3">
+				<h:graphicImage library="img" name="tablet-3x.png" />
+				+ 258 84 2266 042
+			</div>
+			<div class="col-3 col-md-3">
+				<h:graphicImage library="img" name="mail.png" height="30px" />
+				direccao@cujo.co.mz ou info@cujo.co.mz
+			</div>
+			<div class="col-3 col-md-3"
+				style="text-align: right; padding-right: 0px !important;">
+				<h:graphicImage id="fotoMoca" library="img" name="mocambique.gif"
+					styleClass="img img-fluid apontar"
+					style="height:20px; width:30px; margin-right:20px;"></h:graphicImage>
+				<h:graphicImage id="fotoIngl" library="img" name="en.gif"
+					styleClass="img img-fluid apontar"
+					style=" height:20px; width:30px; margin-right:10px;"></h:graphicImage>
+				<h:commandButton value="Entrar" styleClass="btn btn-success"
+					style="width:80px; background-color:#EA3E0A; align-items:left;" />
+
+			</div>
+		</div>
+
+
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+		style="background-color: #EA3E0A !important; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: #000; height: 80px; padding-top: 10px !important;">
+		<div class="col-6 col-md-3">
+			<a class="navbar-brand" href="#"><h:graphicImage library="img"
+					name="Logo Cujo-01.png" height="70" width="155" /></a>
+		</div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="col-6 col-md-9">
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a id="home" class="nav-link"
+						href="pedreira.jsf">Home <span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false"> Quem Somos </a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Visão</a> <a
+								class="dropdown-item" href="#">Valores</a>
+								 <a
+								class="dropdown-item" href="#">Missão</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Pilares da instituição</a>
+						</div></li>
+					<li class="nav-item"><a class="nav-link" href="servicos.jsf">Serviços</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Documetação </a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="legislacao.jsf">Legislação</a> 
+						</div></li>
+					<li class="nav-item"><a class="nav-link" href="galeria.jsf">Galeria</a></li>
+
+					<li class="nav-item"><a class="nav-link" href="contacto.jsf">Fale-conosco</a></li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search"
+						placeholder="Procurar" aria-label="Search" size="30" />
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div style="margin-left:175px; margin-right:175px; height: 100px;">
+	
+		<img src="/projectovenda/javax.faces.resource/dsc_0078.jpg.jsf?ln=img/data1/images/" height="300" width="100%"  alt="Minerais"  title="Minerais" id="wows1_3"/>
+	</div>
+	
+	
+	<div class=""
+		style="background: transparent; margin-left: 183px; margin-right: 183px;">
+		<h1 align="left" class="" style="color: #CDAA7D;">
+			<span class="display-4"
+				style="font-weight: 900; border-bottom: 3px solid #EA3E0A;"
+				id="empresa">Galeria</span>
+		</h1>
+
+		<p class="lead text-left eventoCaregar"
+			style="z-index: 2000; font-size: 20px; padding-left:20px; font-weight:600; color:white;">
+			<br></br>
+
+		</p>
+	</div>
+	
+	<div
+		style="align:center; background-color: white; padding-top: 95px; padding-bottom: 30px; margin-left: 175px; margin-right: 175px;">
+			<div class="col-12 col-md-12">
+				
+				<div align="center" style="color: #CDAA7D; width: 100%; padding-top:10px;">
+					<span class="display-4"
+						style="font-weight: 900; border-bottom: 3px solid #EA3E0A;">Galeria</span>
+				</div>
+				<div class="row" style="margin-top: 20px;">
+
+
+					<p:lightBox>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0080.JPG.jsf?ln=img/exploracao"
+							title="Mail">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0080.JPG" />
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0076.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0076.JPG" />
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0077.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0077.JPG" />
+
+
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0105.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0105.JPG" />
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0142.JPG.jsf?ln=img/exploracao"
+							title="Mail">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0142.JPG" />
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0057.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0057.JPG" />
+						</h:outputLink>
+						  		<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0052.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0052.JPG" />
+						</h:outputLink>
+						<h:outputLink
+							value="/projectovenda/javax.faces.resource/DSC_0127.JPG.jsf?ln=img/exploracao"
+							title="Home">
+							<p:graphicImage styleClass="fotoOrg" height="100" width="100"
+								library="img/exploracao" name="DSC_0127.JPG" />
+						</h:outputLink>
+						
+			
+					</p:lightBox>
+				</div>
+				<div align="center" style="color: #CDAA7D; width: 100%;">
+					<h2
+						style="font-weight: 900; border-bottom: 3px solid #EA3E0A; text-align: left;">Siga
+						nos:</h2>
+				</div>
+				<h:graphicImage library="img" name="index.png" width="40"
+					height="25"></h:graphicImage>
+				<h:graphicImage library="img" name="twiter.jpg" width="40"
+					height="20"></h:graphicImage>
+				<a href="#" class="fa fa-facebook"></a> <a href="#"
+					class="fa fa-twitter"></a>
+
+			</div>
+	</div>
+
+
+
+	<div class=""
+		style="display: block; margin-left: 195px; margin-right: 195px;">
+		
+		<div class="row" style="background-color: #CDAA7D; height: 30px;">
+			<div class="col-12 col-md-12">
+				<h4 align="center" style="padding-top: 5px;">Copyright © CUJO
+					Sistemas 2018. Todos os Direitos Reservados.</h4>
+			</div>
+		</div>
+	</div>
+	<div id="setaCima"
+		onclick="redirecionarPaginaAqui('#{request.contextPath}','/publico/pedreira.jsf#logo');"
+		class="rounded-circle "
+		style="position: fixed; right: 20px; top: 580px; background: #CDAA7D; width: 50px !important; height: 50px !important;">
+		<h:graphicImage library="img" name="arrow-thick-top-4x.png"
+			styleClass="img img-fluid" style="padding:12px;"></h:graphicImage>
+		
+	</div>
+	
+	<script type="text/javascript">
+		$("#setaCima").hide();
+
+		$("#esconder").hide();
+
+		function amostrar() {
+			$("#esconder").show('slow');
+
+			$("#reticecia").hide();
+			$("#BotaoAmostrar").hide('slow');
+
+		}
+		$("#fotoIngl")
+				.click(
+						function() {
+
+							document.getElementById("apresentacao").innerHTML = "A CUJO, Mineral Society, Lda";
+							document.getElementById("intro").innerHTML = " is an entity that deal with exploration of stones to construction of public infra-instructer end habilitaction.";
+
+						});
+
+		$("#fotoMoca")
+				.click(
+						function() {
+
+							document.getElementById("apresentacao").innerHTML = "A CUJO, Sociedade Mineira, Lda";
+
+							document.getElementById("intro").innerHTML = " é uma 			entidade vocaciondada na exploração de pedra para fins de construção de infra-estruturas publicas e de habilitação.";
+
+						});
+
+		$("document")
+				.ready(
+						function() {
+							$("html").niceScroll();
+
+							$(".eventoCaregar").hide();
+							
+							$("#empresa").slideUp(2000)
+							$("#empresa").slideDown(2000);
+
+							$(".eventoCaregar").show(4000);
+
+							$(window).scroll(function() {
+								if ($(this).scrollTop() > 200) {
+									$("#setaCima").show('slow');
+
+									$("#BotaoAmostrar").show('show');
+									$("#esconder").hide('slow');
+									$("#reticecia").show('slow');
+
+								} else {
+									$("#setaCima").hide('slow');
+								}
+
+								if ($(window).scrollTop() > 150) {
+
+									$("p li").addClass("animated bounce");
+
+								}
+							});
+							$("#fotoMoca")
+									.hover(
+											function() {
+
+												$("#fotoMoca")
+														.attr('src',
+																'/projectovenda/javax.faces.resource/moz.png.jsf?ln=img');
+											});
+							$("#fotoMoca")
+									.mouseleave(
+											function() {
+
+												$("#fotoMoca")
+														.attr('src',
+																'/projectovenda/javax.faces.resource/mocambique.gif.jsf?ln=img');
+											});
+
+							$("#fotoIngl")
+									.hover(
+											function() {
+
+												$("#fotoIngl")
+														.attr('src',
+																'/projectovenda/javax.faces.resource/ingla.jpg.jsf?ln=img');
+											});
+
+							$("#fotoIngl")
+									.mouseleave(
+											function() {
+
+												$("#fotoIngl")
+														.attr('src',
+																'/projectovenda/javax.faces.resource/en.gif.jsf?ln=img');
+											});
+							$('#noticia').tooltip('enable');
+
+						});
+	</script>
+</h:body>
+</html>
