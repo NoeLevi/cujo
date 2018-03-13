@@ -342,6 +342,7 @@ _:-ms-input-placeholder, :root #wowslider-container1 a.ws_playpause > span:befor
 	bottom: 45px;
 	top: auto;
 	opacity: 1;
+	margin-left: 60px;
 }
 #wowslider-container1 .ws-title div,#wowslider-container1 .ws-title span{
 	display:inline-block;
