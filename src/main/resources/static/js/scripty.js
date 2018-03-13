@@ -1,7 +1,71 @@
+$("#setaCima").hide();
+
+		$("#esconder").hide();
+
+		function amostrar() {
+			$("#esconder").show('slow');
+
+			$("#reticecia").hide();
+			$("#BotaoAmostrar").hide('slow');
+
+		}
+		$("#fotoIngl")
+				.click(
+						function() {
+
+							document.getElementById("apresentacao").innerHTML = "A CUJO, Mineral Society, Lda";
+							document.getElementById("intro").innerHTML = " is an entity that deal with exploration of stones to construction of public infra-instructer end habilitaction.";
+
+						});
+
+		$("#fotoMoca")
+				.click(
+						function() {
+
+							document.getElementById("apresentacao").innerHTML = "A CUJO, Sociedade Mineira, Lda";
+
+							document.getElementById("intro").innerHTML = " é uma 			entidade vocaciondada na exploração de pedra para fins de construção de infra-estruturas publicas e de habilitação.";
+
+						});
+
+		$("document")
+				.ready(
+						function() {
+							$("html").niceScroll();
+
+							$(".eventoCaregar").hide();
+							
+							$("#empresa").slideUp(2000)
+							$("#empresa").slideDown(2000);
+
+							$(".eventoCaregar").show(4000);
+
+							$(window).scroll(function() {
+								if ($(this).scrollTop() > 200) {
+									$("#setaCima").show('slow');
+
+									$("#BotaoAmostrar").show('show');
+									$("#esconder").hide('slow');
+									$("#reticecia").show('slow');
+
+								} else {
+									$("#setaCima").hide('slow');
+								}
+
+								if ($(window).scrollTop() > 150) {
+
+									$("p li").addClass("animated bounce");
+
+								}
+							});
+							
+							$('#noticia').tooltip('enable');
+
+						});
 /** 
  * scroll
  * */
-$('nav a[href^="#"]').on('click', function(e) {
+$('a[href^="#"]').on('click', function(e) {
 	e.preventDefault();
 	var id = $(this).attr('href'),
 			targetOffset = $(id).offset().top;
@@ -9,6 +73,49 @@ $('nav a[href^="#"]').on('click', function(e) {
 	$('html, body').animate({ 
 		scrollTop: targetOffset - 100
 	}, 1500);
+});
+
+$("#fotoMoca")
+.hover(
+		function() {
+
+			$("#fotoMoca")
+					.attr('src',
+							'/projectovenda/javax.faces.resource/moz.png.jsf?ln=img');
+		});
+$("#fotoMoca")
+.hover(
+function() {
+
+	$("#fotoMoca")
+			.attr('src',
+					'img/moz.png');
+});
+$("#fotoMoca")
+.mouseleave(
+function() {
+
+	$("#fotoMoca")
+			.attr('src',
+					'img/mocambique.gif');
+});
+
+$("#fotoIngl")
+.hover(
+function() {
+
+	$("#fotoIngl")
+			.attr('src',
+					'img/ingla.jpg');
+});
+
+$("#fotoIngl")
+.mouseleave(
+function() {
+
+	$("#fotoIngl")
+			.attr('src',
+					'img/en.gif');
 });
 
 var arrayIdsElementsPage = new Array;

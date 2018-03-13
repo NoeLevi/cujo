@@ -15,8 +15,7 @@
 	
 	<h:outputScript name="jquery.js" library="primefaces/jquery"
 		id="jsJquery" />
-	<script src="http://maps.google.com/maps/api/js?sensor=true|false"
-type="text/javascript"></script>
+
 	<h:outputScript name="jquery-plugins.js" library="primefaces/jquery"
 		id="jsJqueryPlugin" />
 	
@@ -32,43 +31,22 @@ type="text/javascript"></script>
 
 	<h:outputStylesheet name="primefaces.css" library="primefaces" id="jdPrimeCss"/>
 
-	<h:outputStylesheet name="bootstrap-grid.min.css" library="css"/>
-
-	<h:outputStylesheet name="bootstrap.min.css" library="css"/>
-
 	
-
-	<h:outputScript name="bootstrap.bundle.js" library="js"/>
-	<h:outputScript name="bootstrap.bundle.min.js" library="js"/>
-
 	<h:outputStylesheet name="jquery-ui.css" library="primefaces/jquery/ui"
 		id="jsJqueryUi"/>
 
 	<h:outputScript name="primefaces.js" library="primefaces" id="jsPrime" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css"/>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+	<link rel="stylesheet" href="engine1/style.css" type="text/css"/>
+		<link rel="stylesheet" href="engine1/style.mod.css" type="text/css"/>
 	
 	
+	<link rel="stylesheet" href="css/estilo.css" type="text/css"/>
 	
-	<h:outputScript name="bootstrap.js" library="js"/>
 
-<h:outputStylesheet name="style.css" library="engine1"/>
-	
-	<h:outputStylesheet name="style.mod.css" library="engine1"/>
-	
-	<h:outputScript name="scripty.js" library="js" id="jsScriptSistema" />
-	<h:outputScript name="jsf.js" library="javax.faces" />
-	
-	
-	
-	
-	<h:outputScript name="script.js" library="engine1"/>
-	
-	
-	
-	<h:outputStylesheet name="estilo.css" library="css" id="cssStiloSistema"/>
-		<h:outputScript name="jquery.js" library="engine1"/>
-	
-	<h:outputScript name="wowslider.js" library="engine1"/>
-	<h:outputScript name="wowslider.mod.js" library="engine1"/>
+		
 		
 	
 
@@ -87,22 +65,22 @@ type="text/javascript"></script>
 					Sociedade Mineira, Lda</span>
 			</div>
 			<div class="col-3 col-md-3">
-				<h:graphicImage library="img" name="tablet-3x.png" />
-				+ 258 84 2266 042
+				<img src="img/tablet-3x.png" />
+				+ 258 84 2266 442
 			</div>
 			<div class="col-3 col-md-3">
-				<h:graphicImage library="img" name="mail.png" height="30px" />
+				<img src="img/mail.png" height="30px" />
 				direccao@cujo.co.mz ou info@cujo.co.mz
 			</div>
 			<div class="col-3 col-md-3"
 				style="text-align: right; padding-right: 0px !important;">
-				<h:graphicImage id="fotoMoca" library="img" name="mocambique.gif"
+				<img id="fotoMoca" src="img/mocambique.gif"
 					styleClass="img img-fluid apontar"
-					style="height:20px; width:30px; margin-right:20px;"></h:graphicImage>
-				<h:graphicImage id="fotoIngl" library="img" name="en.gif"
+					style="height:20px; width:30px; margin-right:20px;"/>
+				<img id="fotoIngl" src="img/en.gif"
 					styleClass="img img-fluid apontar"
-					style=" height:20px; width:30px; margin-right:10px;"></h:graphicImage>
-				<h:commandButton value="Entrar" styleClass="btn btn-success"
+					style=" height:20px; width:30px; margin-right:10px;"/>
+								<h:commandButton value="Entrar" styleClass="btn btn-success"
 					style="width:80px; background-color:#EA3E0A; align-items:left;" />
 
 			</div>
@@ -113,8 +91,7 @@ type="text/javascript"></script>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
 		style="background-color: #EA3E0A !important; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: #000; height: 80px; padding-top: 10px !important;">
 		<div class="col-6 col-md-3">
-			<a class="navbar-brand" href="#"><h:graphicImage library="img"
-					name="Logo Cujo-01.png" height="70" width="155" /></a>
+			<a class="navbar-brand" href="#"><img src="img/Logo Cujo-01.png" height="70" width="155" /></a>
 		</div>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -129,31 +106,31 @@ type="text/javascript"></script>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a id="home" class="nav-link"
-						href="pedreira.jsf">Home <span class="sr-only">(current)</span>
+						href="/">Home <span class="sr-only">(current)</span>
 					</a></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 						role="button" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false"> Quem Somos </a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Visão</a> <a
-								class="dropdown-item" href="#">Valores</a>
+							<a class="dropdown-item" href="#visao">Visão</a> <a
+								class="dropdown-item" href="#valores">Valores</a>
 								 <a
-								class="dropdown-item" href="#">Missão</a>
+								class="dropdown-item" href="#missao">Missão</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Pilares da instituição</a>
+							<a class="dropdown-item" href="#pilares">Pilares da instituição</a>
 						</div></li>
-					<li class="nav-item"><a class="nav-link" href="servicos.jsf">Serviços</a></li>
+					<li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 						role="button" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false">Documetação </a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="legislacao.jsf">Legislação</a> 
+							<a class="dropdown-item" href="/legislacao">Legislação</a> 
 						</div></li>
-					<li class="nav-item"><a class="nav-link" href="galeria.jsf">Galeria</a></li>
+					<li class="nav-item"><a class="nav-link" href="/galeria">Galeria</a></li>
 
-					<li class="nav-item"><a class="nav-link" href="contacto.jsf">Fale-conosco</a></li>
+					<li class="nav-item"><a class="nav-link" href="/contacto">Fale-conosco</a></li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="search"
@@ -173,8 +150,8 @@ type="text/javascript"></script>
 		<div class="row">
 			<div class="col-12 col-md-12" style="display:flex;  padding-left:35px;">
 				
-<h:graphicImage library="img" name="basalto.jpg"
-							styleClass="card-img-top" height="200px;" style="width:300px; align:left; padding-right:20px;" ></h:graphicImage>
+<img src="img/basalto.jpg"
+							styleClass="card-img-top" height="200px;" style="width:300px; align:left; padding-right:20px;" />
 							<div style="flex-direction:horizontal;">
 							<h2 style="width:100%;">Basalto Irregular</h2>
 							<p style="font-size:15px; padding-left: 5px; padding-right:10px;" align="justify">
@@ -201,112 +178,18 @@ O magma aonge a superficie, arrefecendo rapidamente e originando o basalto.
 		</div>
 	</div>
 	<div id="setaCima"
-		onclick="redirecionarPaginaAqui('#{request.contextPath}','/publico/pedreira.jsf#logo');"
 		class="rounded-circle "
 		style="position: fixed; right: 20px; top: 580px; background: #CDAA7D; width: 50px !important; height: 50px !important;">
-		<h:graphicImage library="img" name="arrow-thick-top-4x.png"
-			styleClass="img img-fluid" style="padding:12px;"></h:graphicImage>
+		<a href="#"><img src="img/arrow-thick-top-4x.png"
+			styleClass="img img-fluid" style="padding:12px;"/></a>
 		
 	</div>
 	
-	<script type="text/javascript">
-		$("#setaCima").hide();
-
-		$("#esconder").hide();
-
-		function amostrar() {
-			$("#esconder").show('slow');
-
-			$("#reticecia").hide();
-			$("#BotaoAmostrar").hide('slow');
-
-		}
-		$("#fotoIngl")
-				.click(
-						function() {
-
-							document.getElementById("apresentacao").innerHTML = "A CUJO, Mineral Society, Lda";
-							document.getElementById("intro").innerHTML = " is an entity that deal with exploration of stones to construction of public infra-instructer end habilitaction.";
-
-						});
-
-		$("#fotoMoca")
-				.click(
-						function() {
-
-							document.getElementById("apresentacao").innerHTML = "A CUJO, Sociedade Mineira, Lda";
-
-							document.getElementById("intro").innerHTML = " é uma 			entidade vocaciondada na exploração de pedra para fins de construção de infra-estruturas publicas e de habilitação.";
-
-						});
-
-		$("document")
-				.ready(
-						function() {
-							$("html").niceScroll();
-
-							$(".eventoCaregar").hide();
-							
-							$("#empresa").slideUp(2000)
-							$("#empresa").slideDown(2000);
-
-							$(".eventoCaregar").show(4000);
-
-							$(window).scroll(function() {
-								if ($(this).scrollTop() > 200) {
-									$("#setaCima").show('slow');
-
-									$("#BotaoAmostrar").show('show');
-									$("#esconder").hide('slow');
-									$("#reticecia").show('slow');
-
-								} else {
-									$("#setaCima").hide('slow');
-								}
-
-								if ($(window).scrollTop() > 150) {
-
-									$("p li").addClass("animated bounce");
-
-								}
-							});
-							$("#fotoMoca")
-									.hover(
-											function() {
-
-												$("#fotoMoca")
-														.attr('src',
-																'/projectovenda/javax.faces.resource/moz.png.jsf?ln=img');
-											});
-							$("#fotoMoca")
-									.mouseleave(
-											function() {
-
-												$("#fotoMoca")
-														.attr('src',
-																'/projectovenda/javax.faces.resource/mocambique.gif.jsf?ln=img');
-											});
-
-							$("#fotoIngl")
-									.hover(
-											function() {
-
-												$("#fotoIngl")
-														.attr('src',
-																'/projectovenda/javax.faces.resource/ingla.jpg.jsf?ln=img');
-											});
-
-							$("#fotoIngl")
-									.mouseleave(
-											function() {
-
-												$("#fotoIngl")
-														.attr('src',
-																'/projectovenda/javax.faces.resource/en.gif.jsf?ln=img');
-											});
-							$('#noticia').tooltip('enable');
-
-						});
-	</script>
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/scripty.js"></script>
+	<script type="text/javascript" src="js/nicescroll.js"></script>
 </h:body>
 </html>
