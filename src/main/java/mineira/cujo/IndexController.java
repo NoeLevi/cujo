@@ -32,4 +32,10 @@ public class IndexController {
 		return "servicos.xhtml";
 	}
 	
+	@RequestMapping("/descricaoBasalto")
+	public String descricaoBasalto(){
+		return "descricaoBasalto.xhtml";
+	}
+	
+	
 }
