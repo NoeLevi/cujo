@@ -32,6 +32,11 @@ public class IndexController {
 		return "servicos.xhtml";
 	}
 	
+	@RequestMapping("/galeria")
+	public String galeria(){
+		return "galeria.xhtml";
+	}
+	
 	@RequestMapping("/descricaoBasalto")
 	public String descricaoBasalto(){
 		return "descricaoBasalto.xhtml";

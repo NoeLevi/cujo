@@ -367,31 +367,39 @@
 																'/projectovenda/javax.faces.resource/moz.png.jsf?ln=img');
 											});
 							$("#fotoMoca")
-									.mouseleave(
-											function() {
+							.hover(
+									function() {
 
-												$("#fotoMoca")
-														.attr('src',
-																'/projectovenda/javax.faces.resource/mocambique.gif.jsf?ln=img');
-											});
+										$("#fotoMoca")
+												.attr('src',
+														'img/moz.png');
+									});
+					$("#fotoMoca")
+							.mouseleave(
+									function() {
 
-							$("#fotoIngl")
-									.hover(
-											function() {
+										$("#fotoMoca")
+												.attr('src',
+														'img/mocambique.gif');
+									});
 
-												$("#fotoIngl")
-														.attr('src',
-																'/projectovenda/javax.faces.resource/ingla.jpg.jsf?ln=img');
-											});
+					$("#fotoIngl")
+							.hover(
+									function() {
 
-							$("#fotoIngl")
-									.mouseleave(
-											function() {
+										$("#fotoIngl")
+												.attr('src',
+														'img/ingla.jpg');
+									});
 
-												$("#fotoIngl")
-														.attr('src',
-																'/projectovenda/javax.faces.resource/en.gif.jsf?ln=img');
-											});
+					$("#fotoIngl")
+							.mouseleave(
+									function() {
+
+										$("#fotoIngl")
+												.attr('src',
+														'img/en.gif');
+									});
 							$('#noticia').tooltip('enable');
 
 						});
