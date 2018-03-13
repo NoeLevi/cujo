@@ -24,51 +24,25 @@ type="text/javascript"></script>
 		id="jsJaqueryCookie" />
 
 	
-	<h:outputScript name="nicescroll.js" library="js" id="jsCroll"/>
-
-	<h:outputStylesheet name="animate.css" library="css" id="anim"/>
-
-	<h:outputScript name="popper.min.js" library="js" id="jsProCookie"/>
-
-	<h:outputStylesheet name="primefaces.css" library="primefaces" id="jdPrimeCss"/>
-
-	<h:outputStylesheet name="bootstrap-grid.min.css" library="css"/>
-
-	<h:outputStylesheet name="bootstrap.min.css" library="css"/>
-
+	<link rel="stylesheet" href="css/animate.css" type="text/css"/>
+			<script type="text/javascript" src="js/popper.min.js"></script>
 	
-
-	<h:outputScript name="bootstrap.bundle.js" library="js"/>
-	<h:outputScript name="bootstrap.bundle.min.js" library="js"/>
-
-	<h:outputStylesheet name="jquery-ui.css" library="primefaces/jquery/ui"
-		id="jsJqueryUi"/>
-
-	<h:outputScript name="primefaces.js" library="primefaces" id="jsPrime" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+	<link rel="stylesheet" href="engine1/style.css" type="text/css"/>
+		<link rel="stylesheet" href="engine1/style.mod.css" type="text/css"/>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
 	
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
 	
+	<script type="text/javascript" src="js/scripty.js"></script>
+	<script type="text/javascript" src="js/nicescroll.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
 	
-	<h:outputScript name="bootstrap.js" library="js"/>
-
-<h:outputStylesheet name="style.css" library="engine1"/>
+		<script type="text/javascript" src="engine1/jquery.js"></script>
 	
-	<h:outputStylesheet name="style.mod.css" library="engine1"/>
-	
-	<h:outputScript name="scripty.js" library="js" id="jsScriptSistema" />
-	<h:outputScript name="jsf.js" library="javax.faces" />
-	
-	
-	
-	
-	<h:outputScript name="script.js" library="engine1"/>
-	
-	
-	
-	<h:outputStylesheet name="estilo.css" library="css" id="cssStiloSistema"/>
-		<h:outputScript name="jquery.js" library="engine1"/>
-	
-	<h:outputScript name="wowslider.js" library="engine1"/>
-	<h:outputScript name="wowslider.mod.js" library="engine1"/>
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<link rel="stylesheet" href="css/estilo.css" type="text/css"/>
 		
 	
 
@@ -87,21 +61,21 @@ type="text/javascript"></script>
 					Sociedade Mineira, Lda</span>
 			</div>
 			<div class="col-3 col-md-3">
-				<h:graphicImage library="img" name="tablet-3x.png" />
+				<img src="img/tablet-3x.png" />
 				+ 258 84 2266 042
 			</div>
 			<div class="col-3 col-md-3">
-				<h:graphicImage library="img" name="mail.png" height="30px" />
+				<img src="img/mail.png" height="30px" />
 				direccao@cujo.co.mz ou info@cujo.co.mz
 			</div>
 			<div class="col-3 col-md-3"
 				style="text-align: right; padding-right: 0px !important;">
-				<h:graphicImage id="fotoMoca" library="img" name="mocambique.gif"
+				<img id="fotoMoca" src="img/mocambique.gif"
 					styleClass="img img-fluid apontar"
-					style="height:20px; width:30px; margin-right:20px;"></h:graphicImage>
-				<h:graphicImage id="fotoIngl" library="img" name="en.gif"
+					style="height:20px; width:30px; margin-right:20px;"/>
+				<img id="fotoIngl" src="img/en.gif"
 					styleClass="img img-fluid apontar"
-					style=" height:20px; width:30px; margin-right:10px;"></h:graphicImage>
+					style=" height:20px; width:30px; margin-right:10px;"/>
 				<h:commandButton value="Entrar" styleClass="btn btn-success"
 					style="width:80px; background-color:#EA3E0A; align-items:left;" />
 
@@ -113,8 +87,7 @@ type="text/javascript"></script>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
 		style="background-color: #EA3E0A !important; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: #000; height: 80px; padding-top: 10px !important;">
 		<div class="col-6 col-md-3">
-			<a class="navbar-brand" href="#"><h:graphicImage library="img"
-					name="Logo Cujo-01.png" height="70" width="155" /></a>
+			<a class="navbar-brand" href="#"><img src="img/Logo Cujo-01.png" height="70" width="155" /></a>
 		</div>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -129,7 +102,7 @@ type="text/javascript"></script>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a id="home" class="nav-link"
-						href="pedreira.jsf">Home <span class="sr-only">(current)</span>
+						href="/">Home <span class="sr-only">(current)</span>
 					</a></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -143,17 +116,17 @@ type="text/javascript"></script>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">Pilares da instituição</a>
 						</div></li>
-					<li class="nav-item"><a class="nav-link" href="servicos.jsf">Serviços</a></li>
+					<li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 						role="button" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false">Documetação </a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="legislacao.jsf">Legislação</a> 
+							<a class="dropdown-item" href="/legislacao">Legislação</a> 
 						</div></li>
-					<li class="nav-item"><a class="nav-link" href="galeria.jsf">Galeria</a></li>
+					<li class="nav-item"><a class="nav-link" href="/galeria">Galeria</a></li>
 
-					<li class="nav-item"><a class="nav-link" href="contacto.jsf">Fale-conosco</a></li>
+					<li class="nav-item"><a class="nav-link" href="/contacto">Fale-conosco</a></li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="search"
@@ -163,9 +136,6 @@ type="text/javascript"></script>
 			</div>
 		</div>
 	</nav>
-	
-	
-	
 	
 
 	<div

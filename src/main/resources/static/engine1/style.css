@@ -325,8 +325,8 @@ _:-ms-input-placeholder, :root #wowslider-container1 a.ws_playpause > span:befor
 	content:'\e803';
 }
 #wowslider-container1 a.ws_prev > span:before {
-	content:'\e802';
-}/* bottom center */
+
+	}/* bottom center */
 #wowslider-container1  .ws_bullets {
 	bottom:1.5em;
 	left:50%;

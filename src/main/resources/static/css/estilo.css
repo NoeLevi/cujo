@@ -7,6 +7,12 @@
 	font-family: arial, helvetic, sans-serif;	
 }
 
+@font-face {
+  src: url('ws-ctrl-rhomb.eot');
+  src: url('ws-ctrl-rhomb.eot#iefix') format('embedded-opentype'),
+       url('ws-ctrl-rhomb.svg#ws-ctrl-rhomb') format('svg');
+}
+
 .apontar{
 cursor:pointer !important;
 
