@@ -147,7 +147,7 @@ height: 500px !important;
 }
 
 body{
-	background-image: url('img/wood1.jpg');
+	background-image: url('../img/wood1.jpg');
 	background-attachment: fixed;
 	
 }
