@@ -21,6 +21,7 @@ public class SenderMailService {
         email.setTo("noelevytete@gmail.com");
         email.setSubject("Teste envio de e-mail");
         email.setText("Enviei este e-mail usando Spring Boot.");
+       System.out.println("proposara de email");
         mailSender.send(email);
     }
 }
