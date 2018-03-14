@@ -27,7 +27,14 @@ margin-left: 183px; margin-right: 183px;
 margin-left: 190px; margin-right: 190px;
 }
 
-
+@media (max-width: 1455px) {
+	.marcacao {
+	width:1000px !important; 
+  margin:0 auto;
+  
+  }
+	
+}
 @media (max-width: 1005px) {
   .marcacao {
   margin-left: 0px; margin-right: 0px;
