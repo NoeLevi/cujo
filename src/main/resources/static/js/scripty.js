@@ -172,6 +172,21 @@ function logout(contextPath) {
 	
 }
 
+function mudarPagina(id) {
+	
+	post="";
+	if(id=='contacto'){
+		post=id;
+	}
+	$.ajax({
+		type:"POST",
+		url: '/'+post
+	}).always(function(resposta) { 
+		
+	});
+	
+}
+
 
 function invalidarSession(context, pagina) {
 	document.location = (context + pagina + ".jsf");

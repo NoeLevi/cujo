@@ -324,12 +324,14 @@ _:-ms-input-placeholder, :root #wowslider-container1 a.ws_playpause > span:befor
 #wowslider-container1 a.ws_next > span:before {
 	content:'\e803';
 }
-#wowslider-container1 a.ws_prev > span:before {
+#wowslider-container1 a.ws_prev > span:before{
+	content:'\e802';
 
 	}/* bottom center */
 #wowslider-container1  .ws_bullets {
 	bottom:1.5em;
 	left:50%;
+	
 }
 #wowslider-container1  .ws_bullets div{
 	left:-50%;

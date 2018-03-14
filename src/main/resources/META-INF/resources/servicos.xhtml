@@ -8,120 +8,36 @@
 
 <h:head>
 	<title><ui:insert name="titulo">Cujo</ui:insert></title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	
-		
+
+
 	<h:outputScript name="jsf.js" library="javax.faces" />
-			
-	<link rel="stylesheet" href="css/animate.css" type="text/css"/>
-	
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
-	<link rel="stylesheet" href="engine1/style.css" type="text/css"/>
-		<link rel="stylesheet" href="engine1/style.mod.css" type="text/css"/>
-	
-	
-	<link rel="stylesheet" href="css/estilo.css" type="text/css"/>
-	
+
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="engine1/style.css" type="text/css" />
+	<link rel="stylesheet" href="engine1/style.mod.css" type="text/css" />
+
+
+	<link rel="stylesheet" href="css/estilo.css" type="text/css" />
+
 
 </h:head>
 
 <h:body>
-	<script type="text/javascript" charset="UTF-8">
-		$.noConflict();
-	</script>
-	<div class="container-fluid  d-none d-lg-block" id="logo"
-		style="background-color: white !important; border-bottom: 4px solid back; height: 40px; padding-top: 10px !important;">
-		<div class="row">
-			<div class="col-3 col-md-3">
-				<span
-					style="width: 100% !important; text-align: center !important; color: #CDAA7D; font-size =25%; font-weight: 900 !important;">CUJO-
-					Sociedade Mineira, Lda</span>
-			</div>
-			<div class="col-3 col-md-3">
-				<img src="img/tablet-3x.png" />
-				+ 258 84 2266 042
-			</div>
-			<div class="col-3 col-md-3">
-				<img src="img/mail.png" height="30px" />
-				direccao@cujo.co.mz ou info@cujo.co.mz
-			</div>
-			<div class="col-3 col-md-3"
-				style="text-align: right; padding-right: 0px !important;">
-				<img id="fotoMoca" src="img/mocambique.gif"
-					styleClass="img img-fluid apontar"
-					style="height:20px; width:30px; margin-right:20px;"/>
-				<img id="fotoIngl" src="img/en.gif"
-					styleClass="img img-fluid apontar"
-					style=" height:20px; width:30px; margin-right:10px;"/>
-				<h:commandButton value="Entrar" styleClass="btn btn-success"
-					style="width:80px; background-color:#EA3E0A; align-items:left;" />
+		<ui:include src="../../templates/cabecalho.xhtml"></ui:include>
 
-			</div>
-		</div>
+	<div style="margin-left: 175px; margin-right: 175px; height: 100px;">
 
-
+		<img src="img/data1/images/dsc_0078.jpg" height="400" width="100%"
+			alt="Minerais" title="Minerais" id="wows1_3" />
 	</div>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
-		style="background-color: #EA3E0A !important; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: #000; height: 80px; padding-top: 10px !important;">
-		<div class="col-6 col-md-3">
-			<a class="navbar-brand" href="#"><img src="img/Logo Cujo-01.png" height="70" width="155" /></a>
-		</div>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
 
-		<div class="col-6 col-md-9">
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a id="home" class="nav-link"
-						href="/">Home <span class="sr-only">(current)</span>
-					</a></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-						role="button" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false"> Quem Somos </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Visão</a> <a
-								class="dropdown-item" href="#">Valores</a>
-								 <a
-								class="dropdown-item" href="#">Missão</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Pilares da instituição</a>
-						</div></li>
-					<li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-						role="button" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Documetação </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="/legislacao">Legislação</a> 
-						</div></li>
-					<li class="nav-item"><a class="nav-link" href="/galeria">Galeria</a></li>
-
-					<li class="nav-item"><a class="nav-link" href="/contacto">Fale-conosco</a></li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search"
-						placeholder="Procurar" aria-label="Search" size="30" />
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
-				</form>
-			</div>
-		</div>
-	</nav>
-	<div style="margin-left:175px; margin-right:175px; height: 100px;">
-	
-		<img src="img/data1/images/dsc_0078.jpg" height="400" width="100%"  alt="Minerais"  title="Minerais" id="wows1_3"/>
-	</div>
-	
-	
 	<div class=""
 		style="background: transparent; margin-left: 183px; margin-right: 183px;">
 		<h1 align="left" class="" style="color: #CDAA7D;">
@@ -130,18 +46,21 @@
 				id="empresa">Serviços</span>
 		</h1>
 
-		<p class="lead text-left eventoCaregar"
-			style="z-index: 2000; font-size: 20px; padding-left:20px; font-weight:600; color:white;">
-			Exploração e fornecimento da pedra de construcção civil;<br></br>
-				Criação de cadeias  de valores para comercialização da pedra de construção civil;<br></br>
-				Aconselhamento para a aplicação adequada da pedra de construção civil e seus derivados;<br></br>
-				Capacitação dos <i>Stakeholders</i> em procedimentos de protecção ambiental, patrimonio cultural e comunicação para mudança.<br></br>
-
+		<p class="lead text-left"
+			>
+		<ul  class="eventoCaregar" style="z-index: 2000;padding-left: 20px; font-weight: 600; color: white;">
+			<li style="font-size: 18px;">Exploração e fornecimento da pedra de construcção civil;</li>
+				<li style="font-size: 18px;">		Criação de cadeias  de valores para comercialização da pedra de construção civil;</li>
+				<li style="font-size: 18px;">	Aconselhamento para a aplicação adequada da pedra de construção civil e seus derivados;</li>
+			 <li style="font-size: 18px;">Capacitação dos Stakeholders em procedimentos de protecção
+				ambiental, patrimonio cultural e comunicação para mudança.</li>
+			
+		</ul>
 		</p>
 	</div>
 	
 	<div
-		style="background-color: white; padding-top: 65px; padding-bottom: 30px; margin-left: 175px; margin-right: 175px;">
+		style="background-color: white; padding-top: 135px; padding-bottom: 30px; margin-left: 175px; margin-right: 175px;">
 		<div class="row">
 			<div class="col-12 col-md-8">
 				<div align="center" class=""
@@ -152,37 +71,41 @@
 				</div>
 				<div class="card-group">
 					<div class="card fotoOrg">
-						<img src="img/basalto.jpg"
-							styleClass="card-img-top" height="150px;"/>
+						<img src="img/basalto.jpg" styleClass="card-img-top"
+							height="150px;" />
 						<div class="card-body">
 							<h4 class="card-title">
 								<b>Basalto Natural</b>
 							</h4>
-						<h:commandButton value=" Ver Descrição" style=" padding:10px; background-color:transparent; border:1px solid black;"/>
+						<h:commandButton value=" Ver Descrição"
+								style=" padding:10px; background-color:transparent; border:1px solid black;" />
 
 
 						</div>
 					</div>
 					<div class="card fotoOrg" style="margin-left: 20px !important;">
-						<img src="img/basalto1.jpg"
-							styleClass="card-img-top" height="150px;"/>
+						<img src="img/basalto1.jpg" styleClass="card-img-top"
+							height="150px;" />
 						<div class="card-body">
 							<h4 class="card-title">
 								<b>Basalto Irregular</b>
 							</h4>
-							<h:commandButton id="basaltoIrregular" onclick="redirecionarPaginaAqui('#{request.contextPath}','/descricaoBasalto');" value=" Ver Descrição" style=" padding:10px; background-color:transparent; border:1px solid black;"/>
+							<h:commandButton id="basaltoIrregular"
+								onclick="redirecionarPaginaAqui('#{request.contextPath}','/descricaoBasalto');"
+								value=" Ver Descrição"
+								style=" padding:10px; background-color:transparent; border:1px solid black;" />
 
 						</div>
 					</div>
 					<div class="card fotoOrg" style="margin-left: 20px !important;">
-						<img src="img/reol.jpg"
-							styleClass="card-img-top" height="150px;"
-							style="border: 1px solid #ccc;'"/>
+						<img src="img/reol.jpg" styleClass="card-img-top" height="150px;"
+							style="border: 1px solid #ccc;'" />
 						<div class="card-body">
 							<h4 class="card-title">
 								<b>Riolite </b>
 							</h4>
-					<h:commandButton value=" Ver Descrição" style=" padding:10px; background-color:transparent; border:1px solid black;"/>
+					<h:commandButton value=" Ver Descrição"
+								style=" padding:10px; background-color:transparent; border:1px solid black;" />
 
 
 						</div>
@@ -190,7 +113,8 @@
 				</div>
 			</div>
 			<div class="col-12 col-md-4">
-				<div align="center" style="color: #CDAA7D; width: 100%; padding-top:10px;">
+				<div align="center"
+					style="color: #CDAA7D; width: 100%; padding-top:10px;">
 					<span class="display-4"
 						style="font-weight: 900; border-bottom: 3px solid #EA3E0A;">Galeria</span>
 				</div>
@@ -198,41 +122,29 @@
 
 
 					<p:lightBox>
-						<h:outputLink
-						value="/img/exploracao/DSC_0080.JPG"
-							title="Mail">
+						<h:outputLink value="/img/exploracao/DSC_0080.JPG" title="Mail">
 							<img styleClass="fotoOrg" height="100" width="100"
 								src="img/exploracao/DSC_0080.JPG" />
 						</h:outputLink>
-						<h:outputLink
-							value="/img/exploracao/DSC_0076.JPG"
-							title="Home">
+						<h:outputLink value="/img/exploracao/DSC_0076.JPG" title="Home">
 							<img styleClass="fotoOrg" height="100" width="100"
 								src="img/exploracao/DSC_0076.JPG" />
 						</h:outputLink>
-						<h:outputLink
-							value="/img/exploracao/DSC_0077.JPG"
-							title="Home">
+						<h:outputLink value="/img/exploracao/DSC_0077.JPG" title="Home">
 							<img styleClass="fotoOrg" height="100" width="100"
 								src="img/exploracao/DSC_0077.JPG" />
 
 
 						</h:outputLink>
-						<h:outputLink
-							value="/img/exploracao/DSC_0105.JPG"
-							title="Home">
+						<h:outputLink value="/img/exploracao/DSC_0105.JPG" title="Home">
 							<img styleClass="fotoOrg" height="100" width="100"
 								src="img/exploracao/DSC_0105.JPG" />
 						</h:outputLink>
-						<h:outputLink
-							value="/img/exploracao/DSC_0142.JPG"
-							title="Mail">
+						<h:outputLink value="/img/exploracao/DSC_0142.JPG" title="Mail">
 							<img styleClass="fotoOrg" height="100" width="100"
 								src="img/exploracao/DSC_0142.JPG" />
 						</h:outputLink>
-						<h:outputLink
-							value="/img/exploracao/DSC_0057.JPG"
-							title="Home">
+						<h:outputLink value="/img/exploracao/DSC_0057.JPG" title="Home">
 							<img styleClass="fotoOrg" height="100" width="100"
 								src="img/exploracao/DSC_0057.JPG" />
 						</h:outputLink>
@@ -252,14 +164,11 @@
 					</p:lightBox>
 				</div>
 				<div align="center" style="color: #CDAA7D; width: 100%;">
-					<h2
-						style="font-weight: 900; border-bottom: 3px solid #EA3E0A; text-align: left;">Siga
+					<h2	style="font-weight: 900; border-bottom: 3px solid #EA3E0A; text-align: left;">Siga
 						nos:</h2>
 				</div>
-				<img src="img/index.png" width="40"
-					height="25"/>
-				<img src="img/twiter.jpg" width="40"
-					height="20"/>
+				<img src="img/index.png" width="40" height="25" />
+				<img src="img/twiter.jpg" width="40" height="20" />
 				<a href="#" class="fa fa-facebook"></a> <a href="#"
 					class="fa fa-twitter"></a>
 
@@ -279,11 +188,10 @@
 			</div>
 		</div>
 	</div>
-	<div id="setaCima"
-		class="rounded-circle "
+	<div id="setaCima" class="rounded-circle "
 		style="position: fixed; right: 20px; top: 580px; background: #CDAA7D; width: 50px !important; height: 50px !important;">
 		<a href="#"><img src="img/arrow-thick-top-4x.png"
-			styleClass="img img-fluid" style="padding:12px;"/></a>
+			styleClass="img img-fluid" style="padding:12px;" /></a>
 		
 	</div>
 	

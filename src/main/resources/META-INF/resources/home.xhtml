@@ -32,93 +32,7 @@
 </h:head>
 
 <h:body>
-	<script type="text/javascript" charset="UTF-8">
-		$.noConflict();
-	</script>
-	<div class="container-fluid  d-none d-lg-block" id="logo"
-		style="background-color: white !important; border-bottom: 4px solid back; height: 40px; padding-top: 10px !important;">
-		<div class="row">
-			<div class="col-3 col-md-3">
-				<span
-					style="width: 100% !important; text-align: center !important; color: #CDAA7D; font-size =25%; font-weight: 900 !important;">CUJO-
-					Sociedade Mineira, Lda</span>
-			</div>
-			<div class="col-3 col-md-3">
-				<img src="img/tablet-3x.png" />
-				+ 258 84 2266 442
-			</div>
-			<div class="col-3 col-md-3">
-				<img src="img/mail.png" height="30px" />
-				direccao@cujo.co.mz ou info@cujo.co.mz
-			</div>
-			<div class="col-3 col-md-3"
-				style="text-align: right; padding-right: 0px !important;">
-				<img id="fotoMoca" src="img/mocambique.gif"
-					styleClass="img img-fluid apontar"
-					style="height:20px; width:30px; margin-right:20px;"/>
-				<img id="fotoIngl" src="img/en.gif"
-					styleClass="img img-fluid apontar"
-					style=" height:20px; width:30px; margin-right:10px;"/>
-								<h:commandButton value="Entrar" styleClass="btn btn-success"
-					style="width:80px; background-color:#EA3E0A; align-items:left;" />
-
-			</div>
-		</div>
-
-
-	</div>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
-		style="background-color: #EA3E0A !important; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: #000; height: 80px; padding-top: 10px !important;">
-		<div class="col-6 col-md-3">
-			<a class="navbar-brand" href="#"><img src="img/Logo Cujo-01.png" height="70" width="155" /></a>
-		</div>
-
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="col-6 col-md-9">
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a id="home" class="nav-link"
-						href="/">Home <span class="sr-only">(current)</span>
-					</a></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-						role="button" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false"> Quem Somos </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#visao">Visão</a> <a
-								class="dropdown-item" href="#valores">Valores</a>
-								 <a
-								class="dropdown-item" href="#missao">Missão</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#pilares">Pilares da instituição</a>
-						</div></li>
-					<li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-						role="button" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Documetação </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="/legislacao">Legislação</a> 
-						</div></li>
-					<li class="nav-item"><a class="nav-link" href="/galeria">Galeria</a></li>
-
-					<li class="nav-item"><a class="nav-link" href="/contacto">Fale-conosco</a></li>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search"
-						placeholder="Procurar" aria-label="Search" size="30" />
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
-				</form>
-			</div>
-		</div>
-	</nav>
+	<ui:include src="../../templates/cabecalho.xhtml"></ui:include>
 	<div id="wowslider-container1">
 	<div class="ws_images"><ul>
 		<li><img src="img/data1/images/pedreira_01.jpg" alt="Pedreira" title="Pedreira" id="wows1_0"/></li>
@@ -131,7 +45,7 @@
 		<a href="#" title="Basalto E Riolite"><span><img src="img/data1/tooltips/pedreira_04.jpg" alt="Basalto E Riolite"/>2</span></a>
 		<a href="#" title="Espaço de exploração"><span><img src=" img/data1/tooltips/dsc_0052.jpg" alt="Espaço de exploração"/>3</span></a>
 		<a href="#" title="Minerais"><span><img src="img/data1/tooltips/dsc_0078.jpg" alt="Minerais"/>4</span></a>
-	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">html slider</a> by WOWSlider.com v8.8</div>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="#">Developed </a> by Noe Levi</div>
 	<div class="ws_shadow"></div>
 	</div>	
 	
