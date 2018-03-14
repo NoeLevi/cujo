@@ -17,6 +17,16 @@
 cursor:pointer !important;
 
 }
+.marcacao{
+margin-left: 183px; margin-right: 183px;
+}
+@media (max-width: 992px) {
+  .marcacao {
+  margin-left: 100px; margin-right: 100px;
+  
+  }
+}
+
 
 .fundoImg{
 	background-image: url("/resources/img/en.gif") !important;
