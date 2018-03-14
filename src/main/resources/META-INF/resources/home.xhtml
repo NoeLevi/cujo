@@ -32,7 +32,7 @@
 </h:head>
 
 <h:body>
-	<ui:include src="../../templates/cabecalho.xhtml"></ui:include>
+	<ui:include src="cabecalho.xhtml"></ui:include>
 	<div id="wowslider-container1">
 	<div class="ws_images"><ul>
 		<li><img src="img/data1/images/pedreira_01.jpg" alt="Pedreira" title="Pedreira" id="wows1_0"/></li>
@@ -330,9 +330,11 @@
 						<textarea type="text" class="form-control" id="formAssuntoInput2"
 							placeholder="Assunto" />
 					</div>
-					<button type="submit" class="btn btn-primary"
-						style="background-color: #EA3E0A; width: 100px;">Enviar</button>
+					<h:commandButton type="submit" class="btn btn-primary" action="#{emailBean.enviar}"
+						style="background-color: #EA3E0A; width: 100px;"  value="eNVIAR" />
+				
 
+						
 				</form>
 
 			</div>
